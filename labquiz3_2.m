@@ -1,0 +1,11 @@
+i=imread('lena.png');
+sigma = 2;
+gaussian_filtered_image = imgaussfilt(i, sigma);
+figure;
+subplot(1,2,1);
+imshow(i);
+title('original');
+subplot(1,2,2);
+imshow(gaussian_filtered_image);
+title('filtered');
+sgtitle('lab quiz 3(b)');

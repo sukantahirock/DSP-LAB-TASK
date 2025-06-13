@@ -1,0 +1,11 @@
+i = imread('lena.png');
+i_gray = rgb2gray(i);
+median_filtered_image = medfilt2(i_gray);
+figure;
+subplot(1,2,1);
+imshow(i_gray);
+title('Original');
+subplot(1,2,2);
+imshow(median_filtered_image);
+title('Filtered Image');
+sgtitle('lab quiz 3(a)');
